@@ -20,6 +20,9 @@ function App() {
         setProducts(data);
         setFilteredProducts(data);
         setIsFetching(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching data: ", error);
       });
   }, []);
 
